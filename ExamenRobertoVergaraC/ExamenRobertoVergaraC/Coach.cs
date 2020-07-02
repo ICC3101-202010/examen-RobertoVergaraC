@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.ExceptionServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -27,6 +28,15 @@ namespace ExamenRobertoVergaraC
             //player1 sale
             //player2 entra
             return true;
+        }
+
+        public void OnInjured(object source, TeamEventArgs args)
+        {
+            //Se recibe la Información que un jugador se lesionó, por lo que se implementa el método change Player
+            // TeamEventArgs contiene la información del equipo
+            ChangePlayer(args.Player, args.Team.Players.Last()); //Por ejemplo el último jugador del equipo
+            //Sabemos que equipo es, por lo que basta hacer el cambio
+            //Además Args tiene la información de Game, por lo que puede meterse dentro del equipo y cambiar la información.
         }
     }
 }

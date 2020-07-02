@@ -27,10 +27,24 @@ namespace ExamenRobertoVergaraC
             this.duración = duracion;
         }
 
+
         public void GameResult(int probabilidadEquipo1, int ProbabilidadEquipo2)
         {
             //NotImplementedYet
             //Calcularía el Resultado por medio de las probabilidades de cada equipo
         }
+
+        public void Match()
+        {
+            //Método de lo que pasa en el partido, ya sea ocurren lesiones, definir que tipo de partido es, etc...
+
+            //...
+
+            //Suponiendo que un jugador se lesiona
+            Equipo1.Players[5].Injuring(Equipo1, this); //Suponemos que el jugador 6 del equipo 1 se lesiona. Este llama al método que "lo lesiona", entregandole la información del equipo para tener las opciones pertinentes para hacer el cambio
+
+            GameResult(50, 50); //ponemos cualquier probabilidad
+        }
+
     }
 }
