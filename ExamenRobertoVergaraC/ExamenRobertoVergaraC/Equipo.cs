@@ -66,7 +66,7 @@ namespace ExamenRobertoVergaraC
             Console.WriteLine("-----Información Equipo-----");
             Console.WriteLine("Nombre: "+this.teamName);
             if (type == true)
-                Console.WriteLine("Tipo: NACIONAL ("+this.nacionality+")");
+                Console.WriteLine("Tipo: NACIONAL ("+this.nacionality.ToUpper()+")");
             else
                 Console.WriteLine("Tipo: LIGA");
 
@@ -74,6 +74,7 @@ namespace ExamenRobertoVergaraC
             foreach (Player p in players)
             {
                 p.Show();
+                Console.WriteLine();
             }
             Console.WriteLine("\n-----Entrenador-----");
             coach.Show();

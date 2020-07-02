@@ -30,7 +30,7 @@ namespace ExamenRobertoVergaraC
 
         public override string Info()
         {
-            return "Name: " + this.Name + "\nAge: " + this.age + "\nNacionalidad: " + this.nacionality + "\nProfesión: Jugador de Fútbol" + "\nNúmero de Camiseta: " + this.shirtNumber;
+            return "Name: " + this.Name + "\nAge: " + this.age + "\nNacionalidad: " + this.nacionality.ToUpper() + "\nProfesión: Jugador de Fútbol" + "\nNúmero de Camiseta: " + this.shirtNumber;
         }
 
         public event EventHandler<TeamEventArgs> Injured;

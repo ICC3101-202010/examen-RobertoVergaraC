@@ -19,7 +19,7 @@ namespace ExamenRobertoVergaraC
 
         public override string Info()
         {
-            return "Name: " + this.Name + "\nAge: " + this.age + "\nNacionalidad: " + this.nacionality + "\nProfesión: Médico";
+            return "Name: " + this.Name + "\nAge: " + this.age + "\nNacionalidad: " + this.nacionality.ToUpper() + "\nProfesión: Médico";
         }
 
         public bool Evaluate(Player player)

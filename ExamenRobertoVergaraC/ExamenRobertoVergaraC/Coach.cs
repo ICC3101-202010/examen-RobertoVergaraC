@@ -20,7 +20,7 @@ namespace ExamenRobertoVergaraC
 
         public override string Info()
         {
-            return "Name: " + this.Name + "\nAge: " + this.age + "\nNacionalidad: " + this.nacionality + "\nProfesión: Entrenador";
+            return "Name: " + this.Name + "\nAge: " + this.age + "\nNacionalidad: " + this.nacionality.ToUpper() + "\nProfesión: Entrenador";
         }
 
         public bool ChangePlayer(Player player1,Player player2)
